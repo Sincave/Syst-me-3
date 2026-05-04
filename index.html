@@ -228,20 +228,33 @@
       <div id="customersList" class="customers-grid"></div>
     </div>
 
-    <!-- ══ الديون ══ -->
+   <!-- =================== صفحة الديون =================== -->
     <div id="page-debts" class="page">
       <div class="page-header">
-        <h2><i class="fas fa-hand-holding-usd"></i> الديون</h2>
-        <button class="btn-primary" onclick="openDebtModal()"><i class="fas fa-plus"></i> تسجيل دين</button>
+        <h2><i class="fas fa-hand-holding-usd"></i> نظام الديون</h2>
+        <button class="btn-primary" onclick="openDebtModal()">
+          <i class="fas fa-plus"></i> تسجيل دين
+        </button>
       </div>
       <div class="debts-summary" id="debtsSummary"></div>
       <div class="debt-filter">
-        <button class="filter-btn active" onclick="loadDebts('',this)">الكل</button>
-        <button class="filter-btn" onclick="loadDebts('pending',this)">غير مدفوع</button>
-        <button class="filter-btn" onclick="loadDebts('partial',this)">جزئي</button>
-        <button class="filter-btn" onclick="loadDebts('paid',this)">مدفوع</button>
+        <button class="filter-btn active" onclick="loadDebts('', this)">الكل</button>
+        <button class="filter-btn" onclick="loadDebts('pending', this)">غير مدفوع</button>
+        <button class="filter-btn" onclick="loadDebts('partial', this)">جزئي</button>
+        <button class="filter-btn" onclick="loadDebts('paid', this)">مدفوع</button>
       </div>
-      <div id="debtsList"></div>
+      <div id="debtsList" class="debts-list"></div>
+    </div>
+
+    <!-- =================== صفحة المصاريف =================== -->
+    <div id="page-expenses" class="page">
+      <div class="page-header">
+        <h2><i class="fas fa-wallet"></i> المصاريف</h2>
+        <button class="btn-primary" onclick="openExpenseModal()">
+          <i class="fas fa-plus"></i> إضافة مصروف
+        </button>
+      </div>
+      <div id="expensesList" class="expenses-list"></div>
     </div>
 
     <!-- ══ الصندوق ══ -->
