@@ -255,7 +255,20 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);direction:rt
 .customer-stats { display: flex; justify-content: space-around; border-top: 1px solid var(--border); padding-top: 0.7rem; margin-top: 0.5rem; }
 .customer-stat-val { font-weight: 700; font-size: 0.95rem; color: var(--primary); }
 .customer-stat-label { font-size: 0.75rem; color: var(--text3); }
-
+/* ── المصاريف ── */
+.expenses-list { display: flex; flex-direction: column; gap: 0.6rem; }
+.expense-card {
+  background: var(--bg2); border-radius: var(--radius);
+  padding: 0.9rem 1rem; border: 1px solid var(--border);
+  display: flex; align-items: center; gap: 0.8rem;
+  box-shadow: var(--shadow); animation: fadeIn 0.3s ease;
+}
+.expense-icon { font-size: 1.5rem; }
+.expense-info { flex: 1; }
+.expense-title { font-weight: 700; font-size: 0.9rem; }
+.expense-category { color: var(--text3); font-size: 0.8rem; }
+.expense-date { color: var(--text3); font-size: 0.8rem; }
+.expense-amount { font-weight: 900; font-size: 1.1rem; color: var(--danger); }
 /* ── التقارير ── */
 .stats-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-bottom:1.5rem}
 .stat-card{background:var(--bg2);border-radius:var(--radius);padding:1.2rem;border:1px solid var(--border);box-shadow:var(--shadow);position:relative;overflow:hidden}
